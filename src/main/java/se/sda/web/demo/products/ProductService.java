@@ -16,6 +16,7 @@ public class ProductService {
     }
 
     public Optional<Product> getById(Long id) {
+        System.out.println("Hello from product service");
         return repo.findById(id);
     }
 

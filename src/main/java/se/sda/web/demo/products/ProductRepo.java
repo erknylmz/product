@@ -7,7 +7,6 @@ import java.util.List;
 
 @Repository
 public interface ProductRepo extends JpaRepository<Product, Long> {
-    // findAllByCategoryIdAndNameContains(1, "Lap") -> Laptop
-    List<Product> findAllByCategoryIdAndNameContains(Long categoryId, String nameSearch);
+    List<Product> findAllByCategoryId(Long categoryId);
     List<Product> findAllByInventories_id(Long inventoryId);
 }
